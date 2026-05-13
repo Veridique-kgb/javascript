@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>String Methods</p>
+    </div>
+    <script>
+        //length
+        let f_name = "jane"
+        console.log(f_name.length) //4
+
+        //charAt
+        console.log(f_name.charAt(3)) //e
+
+        let sentence = "My dog died today"
+        console.log(sentence.slice(3,8)) //dog d
+        console.log(sentence.slice(3,)) //dog died today
+        console.log(sentence.slice()) //original string
+        console.log(sentence.slice(8)) //ied today
+
+
+        //lower and uppercase
+        console.log(sentence.toUpperCase())
+        console.log(sentence.toLowerCase())
+
+        //trim
+        let y = "        x    xjgheir    "
+        let trimmed = y.trim()
+        console.log(trimmed)
+        console.log(y.length)//24
+        console.log(trimmed.length)//13
+
+        //concat
+
+        let first_name = "Alice"
+        let last_name = "Kamau"
+
+        let full_name= first_name.concat(last_name)
+
+        console.log(full_name) //AliceKamau
+
+        //Alternative
+
+        full_name = first_name+" "+ last_name
+
+        //endsWith startsWith
+
+        console.log(last_name.endsWith("ka"))//false
+        console.log(first_name.endsWith("e"))//true
+
+        //replace
+
+        let new_name = first_name.replace("A","E")
+        console.log(new_name)//Elice
+    </script>
+</body>
+</html>
