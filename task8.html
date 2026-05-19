@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>Task 8</p>
+    </div>
+    <script>
+let speed = Number(prompt("Enter driver speed"))
+const speed_limit = 70
+
+if(speed<=speed_limit){
+    console.log("Ok");
+}else{
+
+    let demeritpoints = Math.floor((speed - speed_limit)/5)
+    
+    if(demeritpoints > 12){
+        console.log("Lisence suspended");
+    }else{
+        console.log(`points: ${demeritspoints}`); 
+    }
+}
+
+    </script>
+</body>
+</html>

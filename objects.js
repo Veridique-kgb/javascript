@@ -20,4 +20,6 @@ console.log(Object.values(person))//(4) ["Alice",29,"123 kimathi st."true"]
 console.log(Object.entries(person))//(4) [array(2),array(2),array(2),array(2)]
 
 (2) ["name","Alice"]
+
+
 (2) ["age",29]

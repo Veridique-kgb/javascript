@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>JS Task</p>
+    </div>
+    <script>
+
+//split()
+
+let x = "John Doe Alex"
+console.log(x.split(" "))
+console.log(x.split(","))
+
+//substring()
+
+let word= "Hello World"
+console.log(word.substring(6,11))
+
+//includes
+
+let text = "Hello World";
+console.log(text.includes("World"))
+
+//Clean up the following variable to give the clean version in lower case. Using inbuilt methods in the string class
+// f_name = “  JOHn  .“ to “john”
+
+
+    // replace,trim,toLowerCase
+     let f_name = "  JOHn ."
+     let replaced = f_name.replace('.','')
+     let trimmed = replaced.trim()
+     let lowered = trimmed.toLowerCase()
+     console.log(lowered)
+
+
+//Slice the below string to get you the resulting sentence:
+// sentence_one = “The Dog Breed is German Shepherd” only display “Breed is German”
+// sentence_two = “Defeats for the Clinton forces, this was her moment of triumph” only display “Clinton forces”
+
+     //slicing
+
+    let sentence_one = 'The Dog Breed is German Shepherd'
+    let index1 = sentence_one.indexOf('B')
+    console.log(index1)
+    let index2 = sentence_one.indexOf('n')
+    console.log(index2)
+    let sliced = sentence_one.slice(8,23)
+    console.log(sliced)
+
+    let sentence_two = 'Defeats for the Clinton forces, this was her moment of triumph'
+    let position1 = sentence_two.indexOf('C')
+    console.log(position1)
+    let position2 = sentence_two.indexOf('forces')
+    let sposition = sentence_two.indexOf('s',position2)
+    console.log(sposition)
+
+    let slic = sentence_two.slice()
+
+    //split()
+//     Split the below sentence using a semicolon i.e ; And display length of the result. 
+// “The lazy dog; ran so fast; it hit the wall.” 
+
+let sentence = "The lazy dog; ran so fast; it hit the wall."
+let replac = sentence.replace("."," ")
+console.log(replac.split(";"))
+console.log()
+
+
+
+    </script>
+</body>
+</html>

@@ -7,44 +7,18 @@
 </head>
 <body>
     <div>
-        <p>JS Task</p>
+        <p>Task 1</p>
     </div>
     <script>
 
-//Clean up the following variable to give the clean version in lower case. Using inbuilt methods in the string class
-// f_name = “  JOHn  .“ to “john”
+// Write a program that prompts the user to enter the base and height of a triangle and returns its area.
 
+        let base = Number(prompt("Enter number"))
+        let height = Number(prompt("Enter number"))
 
-    // repalce,trim,toLowerCase
-     let f_name = "  JOHn ."
-     let replaced = f_name.replace('.','')
-     let trimmed = replaced.trim()
-     let lowered = trimmed.toLowerCase()
-     console.log(lowered)
+        let area = 0.5 * base * height
+        console.log(area)
 
-
-//Slice the below string to get you the resulting sentence:
-// sentence_one = “The Dog Breed is German Shepherd” only display “Breed is German”
-// sentence_two = “Defeats for the Clinton forces, this was her moment of triumph” only display “Clinton forces”
-
-     //slicing
-
-    let sentence_one = 'The Dog Breed is German Shepherd'
-    let index1 = sentence_one.indexOf('B')
-    console.log(index1)
-    let index2 = sentence_one.indexOf('n')
-    console.log(index2)
-    let sliced = sentence_one.slice(8,23)
-    console.log(sliced)
-
-    let sentence_two = 'Defeats for the Clinton forces, this was her moment of triumph'
-    let position1 = sentence_two.indexOf('C')
-    console.log(position1)
-    let position2 = sentence_two.indexOf('forces')
-    let sposition = sentence_two.indexOf('s',position2)
-    console.log(sposition)
-
-    let slic = sentence_two.slice()
 
     </script>
 </body>

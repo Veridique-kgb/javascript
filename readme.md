@@ -10,7 +10,7 @@ JS: A programming language that interacts with the browser to create interactive
 
 *What do we use it for*
 
-1. User interactivity: How users interact with a web page e.g scrool, click, ype, hover, focus
+1. User interactivity: How users interact with a web page e.g scrool, click, type, hover, focus
 2. Reactivity: Automatic loading of data without refreshing 
 
 *Where to Write JS*
@@ -52,7 +52,7 @@ JS: A programming language that interacts with the browser to create interactive
 
 -> A way of documenting code
 1. Single line comments -> //
-2. Multiple or block comments->*/ */
+2. Multiple or block comments->ctrl/
 
 *String Methods*
 -> methods: in-built functions that are used to manipulate data
@@ -65,8 +65,8 @@ JS: A programming language that interacts with the browser to create interactive
 4. toLowerCase(): - converting all string characters to lower case format
 5. toUpperCase(): converting all string characters to upper case format
 6. trim(): used to remove whitespaces from a string
-7. trimStart(): used to remove whitespaces fromthe the left side of a string
-8. trimEnd(): used to remove whitespaces fromthe the right side of a string
+7. trimStart(): used to remove whitespaces from the left side of a string
+8. trimEnd(): used to remove whitespaces from the right side of a string
 9. concat(): method used to join or combine two or more strings - used in palce of + to join strings
 10. endsWith(): checks whether a string ends with a specific characters - return a boolean 
 11. startsWith(): checks whether a string starts with a specific characters - return a boolean 
@@ -74,9 +74,16 @@ JS: A programming language that interacts with the browser to create interactive
 
 *Task*
 
-1. split()
-2. substring()
-3. includes()
+1. split(): converts string to an array 
+   -->text.split(",")// Split on commas
+   -->text.split(" ")// Split on spaces
+   -->text.split("|")// Split on pipe
+
+2. substring(): substring() is similar to slice(). The difference is that start and end values less than 0 are treated as 0 in substring().
+
+3. includes(): checks whether a string contains a specific value.
+              --> it returns a boolean
+
 4. task on slide 56
 
 *Numeric Operations / Methods*
@@ -92,7 +99,7 @@ JS: A programming language that interacts with the browser to create interactive
 
 *Type coercion vs Type conversion*
 
-*Type coercion*: The automatic conversion of a value from one data to another. this is done y the language or program automatically 
+*Type coercion*: The automatic conversion of a value from one data type to another. this is done by the language or program automatically 
 
 *Type conversion*: The manual and explicit conversion of a value from one data to another. this is done by the programmer; also called casting when it is done manually 
 
@@ -125,7 +132,7 @@ not (!): negates the boolen value if something is true it converts it to false i
 *CONDITIONAL STATEMENTS ALSO CALLED DECISION MAKERS*
 
 --> These are data structures that enale aprogram make decisions based on some predefined rules/conditions
---> an action is taked based on wether the condition is met or not
+--> an action is taken based on wether the condition is met or not
 --> this is enabled by if-else statements
 
 *Syntax of if-else statements*
@@ -193,7 +200,7 @@ b) Objects
 
 *Arrays Methods*
 1. Accesing values in arrays - uses indexing(indexing is zero-based by default)
-2. uodating or changing values in array - use indexing
+2. updating or changing values in array - use indexing
 3. length - dtermine the no of items in an array
 4. slice()  - extracts a poriton of an array .slice(start,end)
 5. adding items to an array
@@ -248,6 +255,59 @@ b) Objects
 1. accessing values in an object - use the key to access the value 
        --> dot notation : when the key follows indetifiers naming rules
        --> bracket notation: used regardless of wether the key follows varibale naming rules or not
+2. object.keys(): returns all object keys in an array
+3. object.values(): returns all object values in an array
+4. object.entries(): returns all key values pairs in an array
+
+*Task*
+slide 78 & 79
+
+*Loops*
+--> control structures taht are used to execute a block of code repeatedly until a specific condition is met
+--> it aims to reduce redundancy for a developer
+
+*Types of loops*
+1. for loop: used when you have a definitive starting point and end point
+      --> it comprises of three parts
+    1. initialization: starting point of your loop
+    2. condition: condition to be met for the loop to keep running
+    3. update: increment or decrement after an iteration(loop)
+
+*Syntax*
+
+for(initiaization; condition; update){
+    //block executing repeatedly
+}
+
+2. while: runs as long as the condition is met
+
+*Syntax*
+
+ while(condition){
+    block of code executing repeatedly
+ }
+3. do while:executes atleast once before checking for the condition in the loop
+
+*Nested loops complex data structures*
+
+*Task on loops slide 82*
+
+Task on complex data structures In the below complex data structure output the following: a)PostgreSQL b)Brand Strategy c)React
+
+let company = { name: "TechCorp", founded: 2010, location: { country: "Kenya", city: "Nairobi", address: { street: "Kenyatta Avenue", building: "Tech Plaza", floor: 5 } }, departments: [ { name: "Engineering", head: "Alice", employees: [ { id: 1, name: "John", role: "Frontend Developer", skills: ["JavaScript", "React", "CSS"] }, { id: 2, name: "Sarah", role: "Backend Developer", skills: ["Python", "Django", "PostgreSQL"] } ] }, { name: "Marketing", head: "Bob", employees: [ { id: 3, name: "Mike", role: "SEO Specialist", skills: ["SEO", "Google Analytics", "Content Writing"] }, { id: 4, name: "Jane", role: "Social Media Manager", skills: ["Facebook Ads", "Instagram", "Brand Strategy"] } ] } ], projects: [ { title: "E-commerce Website", deadline: "2025-09-30", team: [1, 2] // Employee IDs }, { title: "Brand Awareness Campaign", deadline: "2025-10-15", team: [3, 4] } ] };
+
+break & continue
+
+*Template literals* 
+
+--> A way of adding variables inside strings -> the equivalent of an f-string
+--> it uses backticks and dollar sign
+
+*task*
+
+11-14
+on question 11, do not use the inbluit datetime library
+
 
 
 

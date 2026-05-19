@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>String method</p>
+    </div>
+
+    <script>
+        //length
+
+        let x = "Jane Doe"
+        console.log(x.length)
+
+        //typeof
+console.log(typeof(x))
+
+//charAt
+console.log(x.charAt(1))
+
+//toLowercase
+console.log(x.toLowerCase())
+
+//loUppercase
+console.log(x.toUpperCase())
+
+//startsWith
+console.log(x.startsWith())
+
+//endsWith
+console.log(x.endsWith())
+
+//trim
+let y = "    Alex   "
+console.log(y.trim())
+console.log(y.trimStart())
+console.log(y.trimEnd())
+console.log(y.trimLeft())
+console.log(y.trimRight())
+
+//concat
+let z = "Smith"
+console.log(y.concat(z))
+
+//replace
+console.log(y.replace("x","k"))
+
+//split
+
+let identity = "Name,gender,age,address"
+console.log(identity.split(","))
+
+//exercise
+
+// Clean up the following variable to give the clean version in lower case. Using inbuilt methods in the string class
+// f_name = “  JOHn  .“ to “john”
+
+let f_name = "  JOHn  ."
+
+let replaced = f_name.replace("."," ")
+let trimed = replaced.trim()
+let lowered = trimed.toLowerCase()
+ console.log(lowered)
+
+//slicing
+
+//Slice the below string to get you the resulting sentence:
+// sentence_one = “The Dog Breed is German Shepherd” only display “Breed is German”
+// sentence_two = “Defeats for the Clinton forces, this was her moment of triumph” only display “Clinton forces”
+
+let sentence_one = "The Dog Breed is German Shepherd" //only display “Breed is German”
+
+console.log(sentence_one.indexOf("B"))//8
+console.log(sentence_one.indexOf("n"))//22
+console.log(sentence_one.slice(8,23))
+
+let sentence_two = "Defeats for the Clinton forces, this was her moment of triumph" //only display "Clinton forces"
+
+console.log(sentence_two.indexOf("C"))//
+let force_position = sentence_two.indexOf("force")
+let sposition = sentence_two.indexOf("s",force_position)
+console.log(sposition)//29
+
+console.log(sentence_two.slice(16,30))
+
+// loose and strict operators
+
+console.log(5=="5")//true
+console.log(5==="5")//false
+
+//Write a simple if statement to check eligibility of a voter(assume avoter must be at least 18yrs
+
+let age = Number(prompt("Enter your age"))
+
+if(age>=18){
+    console.log("Eligible to vote")
+}else{
+    console.log("Not eligible to vote")
+}
+
+//with ternary
+
+let eligibility = age>=18 ? "eligible to vote" : "not elibile to vote"
+
+console.log(eligibility)
+
+//Write a program that checks wether the lenght of a username is atleast 8 characters 
+//if length<8 output "Too short" otherwise ouput "correct format"
+
+let format = Number(prompt("Write anything"))
+
+if(format<8){
+    console.log("Too short")
+}else{
+    console.log("Correct format")
+}
+
+//Write a program that determines ticket prices based on age: 
+// under 12-->500/=, under 18-->650/==, adults-->800/=, over 60yrs -->400/=
+
+let Age = Number(prompt("Enter your age"))
+
+if(Age>=0 && Age<12){
+    console.log("ticket is 500/=")
+}else if(Age<18){
+    console.log("ticket is 650/=")
+}else if(Age>=18){
+    console.log("ticket is 800/=")
+}else if(Age>60){
+    console.log("ticket is 400/=")
+}else{
+    console.log("Invalid")
+}
+
+
+    </script>
+</body>
+</html>
