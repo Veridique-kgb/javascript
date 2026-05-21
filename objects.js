@@ -11,7 +11,7 @@ console.log(person["is employed"])
 console.log(person["address"])
 
 person.name = "Alice"
-console.log(person)//[me:"Alice",age:29,address:"123 kimathi st","is employed":true]
+console.log(person)//[name:"Alice",age:29,address:"123 kimathi st","is employed":true]
 
 console.log(Object.keys(person))//(4) ["name","address","is employed"]
 

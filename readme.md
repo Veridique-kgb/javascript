@@ -178,7 +178,7 @@ let variable_name = condition ? what happens if condition is met : what happens 
 
 *DATA STRUCTURES (COLLECTIONS)*
 
---> A data structure is a collection of of multiple values in one varibale /memory location
+--> A data structure is a collection of of multiple values in one varibale/memory location
 
 --> In JS we have two data structures
 
@@ -191,7 +191,7 @@ b) Objects
 
 *Properties of arrays*
 1. they can hold multiple values of any data type
-2. they are rodered --> values can be accessed using index
+2. they are ordered --> values can be accessed using index
                     --> by default there is no negative index in JS arrays (indexing is zero based)
 3. they are mutable _ values can be changed
 4. values in array are coma-separated
@@ -201,12 +201,12 @@ b) Objects
 *Arrays Methods*
 1. Accesing values in arrays - uses indexing(indexing is zero-based by default)
 2. updating or changing values in array - use indexing
-3. length - dtermine the no of items in an array
-4. slice()  - extracts a poriton of an array .slice(start,end)
+3. length - determine the no of items in an array
+4. slice()  - extracts a portion of an array .slice(start,end)
 5. adding items to an array
    -->push(): add items at the end
    -->unshift(): add items at the beggining 
-6. renoving items from an array
+6. removing items from an array
      --> pop(): removing items at the end 
      --> shift(): removig items at the start 
 7. includes(): checks if an item is contained in an array (returns a boolean)
@@ -254,7 +254,7 @@ b) Objects
 
 1. accessing values in an object - use the key to access the value 
        --> dot notation : when the key follows indetifiers naming rules
-       --> bracket notation: used regardless of wether the key follows varibale naming rules or not
+       --> bracket notation: used regardless of wether the key follows variable naming rules or not
 2. object.keys(): returns all object keys in an array
 3. object.values(): returns all object values in an array
 4. object.entries(): returns all key values pairs in an array
@@ -263,7 +263,7 @@ b) Objects
 slide 78 & 79
 
 *Loops*
---> control structures taht are used to execute a block of code repeatedly until a specific condition is met
+--> control structures that are used to execute a block of code repeatedly until a specific condition is met
 --> it aims to reduce redundancy for a developer
 
 *Types of loops*
@@ -275,7 +275,7 @@ slide 78 & 79
 
 *Syntax*
 
-for(initiaization; condition; update){
+for(initialization; condition; update){
     //block executing repeatedly
 }
 
@@ -306,9 +306,78 @@ break & continue
 *task*
 
 11-14
-on question 11, do not use the inbluit datetime library
+on question 11, do not use the inbuilt datetime library
 
+*Functions*
 
+-->A block of reusable code meant to perform a specifi task.
+
+*Why use functions*
+
+1. code reusability
+2. modularity: 
+3. better debugging: breaking down a large codebase into a smaller manageable pieces
+4. better maintainance and scalability
+5. better readability and organization 
+
+*Types of functions*
+
+1. inbuilt functions
+   --> are functions that come with the pogramming language
+   --> e.g: console.log(), typeof(), slice()
+2. user-defined functions
+   --> are custom functions that are created by the programmr
+   --> add_numbers()
+
+*Functions in JS*
+
+--> Functions in JS are created using the "function" keyword 
+--> syntax of a js function:
+   function function_name(){
+    //....block
+   }
+
+*Parts of a function*
+
+1. function definition
+  --> creating/defining a function using function keyword + function_name + possible parameters
+  e.g. function add_numbers() -> non parameterized function
+    function add_numbers(x,y) -> parameterized function
+
+2. function body
+        --> core part of a function containing the code to be executed by the function 
+        --> function add_numbers(x,y){
+            return x+y ----->function body
+        }
+3. function call: calling a function by its name to execute the intended task
+    --> add_numbers()
+
+==> Functions typically use the return keyword
+
+*Return* -> gives back the result of a function and indicates the end of a function
+         -> no code comes after the 
+
+*Variable scopes*
+
+--> determines where avariable is accessible in a program
+1. global scope--> scope that contains global data/variables
+    --> global variables are variables that are accessible from anywhere in the entire program (both global and local)
+2. local scope-->contains local data and local variables
+   --> can only be accessed in their defined scope
+
+*Making functions reusable*
+--> to make functions reusable we use parameters in function
+
+1. parameters: placeholder variable used to make a function reusable
+2. arguments: the real value passed in place of the parameter when calling a function
+
+*Note* --> the number and order of parameters matches the number & order of arguments 
+
+*Task*
+
+1. create a new project called tax_calculator 
+--> create index.html and tax.js files 
+--> do q15-q20 in the tax.js file
 
 
 

@@ -24,7 +24,7 @@ for(let i=300; i>=200; i--){
 
 let fruits = ["mango","apple","peach","orange","banana"]
 
-//manualy
+//manually
 console.log(fruits[0])
 console.log(fruits[1])
 console.log(fruits[2])

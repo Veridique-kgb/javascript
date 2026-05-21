@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>Task on Object</p>
+    </div>
+    <script>
+
+my_arr= [23, "Jane", 560, ["Lesson", "Maths", {"currency" : "KES"}], 987, 76,"John"]
+// Display:
+// 1. KES
+// 2. 560
+// 3. Maths
+
+console.log(my_arr[3][2].currency)
+console.log(my_arr[2])
+console.log(my_arr[3][1])
+
+// In the object with the key currency, add another key “amount” with value 90
+
+my_arr[3][2].amount=90;
+console.log(my_arr)
+
+// Reverse 987 to 789 without using an inbuilt -method or Assigning 789 manually.
+
+// my_arr.reverse([4])
+// console.log(my_arr)
+
+//Change the name “John” to “Jane” . 
+
+my_arr[6]="Jane"
+console.log(my_arr)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </script>
+</body>
+</html>

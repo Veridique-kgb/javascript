@@ -3,7 +3,7 @@ console.log(values)
 console.log(values[4])//Apples
 
 values[5] = false
-console.log(values)
+console.log(values)//[1,2,3,"Mango","Apples",false]
 
 // //length
 
